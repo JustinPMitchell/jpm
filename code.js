@@ -63,7 +63,11 @@ $(document).ready(function() {
     summary.innerHTML = projects[0].description;
     skills.innerHTML = projects[0].technology;
     clearBorders();
-    dinoDynasty.style.border = "3px solid black";
+    dinoDynasty.style.border = "1px solid #aaa";
+    dinoDynasty.style.boxShadow = "0 10px 6px -6px #777";
+    chomper.style.boxShadow = "none";
+    mathymathy.style.boxShadow = "none";
+    izi.style.boxShadow = "none";
   });
 
   chomper.addEventListener("click", function() {
@@ -75,7 +79,11 @@ $(document).ready(function() {
     summary.innerHTML = projects[1].description;
     skills.innerHTML = projects[1].technology;
     clearBorders();
-    chomper.style.border = "3px solid black";
+    chomper.style.border = "1px solid #aaa";
+    chomper.style.boxShadow = "0 10px 6px -6px #777";
+    dinoDynasty.style.boxShadow = "none";
+    mathymathy.style.boxShadow = "none";
+    izi.style.boxShadow = "none";
   });
 
   mathymathy.addEventListener("click", function() {
@@ -87,7 +95,11 @@ $(document).ready(function() {
     summary.innerHTML = projects[2].description;
     skills.innerHTML = projects[2].technology;
     clearBorders();
-    mathymathy.style.border = "3px solid black";
+    mathymathy.style.border = "1px solid #aaa";
+    mathymathy.style.boxShadow = "0 10px 6px -6px #777";
+    dinoDynasty.style.boxShadow = "none";
+    chomper.style.boxShadow = "none";
+    izi.style.boxShadow = "none";
   });
 
   izi.addEventListener("click", function() {
@@ -98,7 +110,11 @@ $(document).ready(function() {
     summary.innerHTML = projects[3].description;
     skills.innerHTML = projects[3].technology;
     clearBorders();
-    izi.style.border = "3px solid black";
+    izi.style.border = "1px solid #aaa";
+    izi.style.boxShadow = "0 10px 6px -6px #777";
+    dinoDynasty.style.boxShadow = "none";
+    chomper.style.boxShadow = "none";
+    mathymathy.style.boxShadow = "none";
   });
 
 });
