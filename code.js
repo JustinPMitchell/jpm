@@ -41,6 +41,7 @@ $(document).ready(function() {
   code = document.getElementsByClassName("projects-code")[0];
   summary = document.getElementsByClassName("projects-summary")[0];
   skills = document.getElementsByClassName("skills-container")[0];
+  projectContainer = document.getElementsByClassName("project-container")[0];
 
   dinoDynasty = document.getElementsByClassName("dino-dynasty")[0];
   chomper = document.getElementsByClassName("chomper")[0];
@@ -55,29 +56,48 @@ $(document).ready(function() {
   }
 
   dinoDynasty.addEventListener("click", function() {
-    title.innerHTML = projects[0].title;
-    image.src = projects[0].img;
-    demo.style.display = "inline-block";
-    demo.href = projects[0].demo;
-    code.href = projects[0].code;
-    summary.innerHTML = projects[0].description;
-    skills.innerHTML = projects[0].technology;
+    projectContainer.style.transition = "opacity 0.5s linear";
+    projectContainer.style.opacity = "0";
+
+    setTimeout(function() {
+      image.src = projects[0].img;
+      projectContainer.style.transition = "opacity 0.5s linear";
+      projectContainer.style.opacity = "1";
+      title.innerHTML = projects[0].title;
+      demo.style.display = "inline-block";
+      demo.href = projects[0].demo;
+      code.href = projects[0].code;
+      summary.innerHTML = projects[0].description;
+      skills.innerHTML = projects[0].technology;
+    }, 600);
+
     clearBorders();
     dinoDynasty.style.border = "1px solid #aaa";
     dinoDynasty.style.boxShadow = "0 10px 6px -6px #777";
     chomper.style.boxShadow = "none";
     mathymathy.style.boxShadow = "none";
     izi.style.boxShadow = "none";
+
+
+
   });
 
   chomper.addEventListener("click", function() {
-    title.innerHTML = projects[1].title;
-    image.src = projects[1].img;
-    demo.style.display = "inline-block";
-    demo.href = projects[1].demo;
-    code.href = projects[1].code;
-    summary.innerHTML = projects[1].description;
-    skills.innerHTML = projects[1].technology;
+    projectContainer.style.transition = "opacity 0.5s linear";
+    projectContainer.style.opacity = "0";
+
+    setTimeout(function() {
+      image.src = projects[1].img;
+      projectContainer.style.transition = "opacity 1s linear";
+      projectContainer.style.opacity = "1";
+      title.innerHTML = projects[1].title;
+      demo.style.display = "inline-block";
+      demo.href = projects[1].demo;
+      code.href = projects[1].code;
+      summary.innerHTML = projects[1].description;
+      skills.innerHTML = projects[1].technology;
+    }, 600);
+
     clearBorders();
     chomper.style.border = "1px solid #aaa";
     chomper.style.boxShadow = "0 10px 6px -6px #777";
@@ -87,13 +107,21 @@ $(document).ready(function() {
   });
 
   mathymathy.addEventListener("click", function() {
-    title.innerHTML = projects[2].title;
-    image.src = projects[2].img;
-    demo.style.display = "inline-block";
-    demo.href = projects[2].demo;
-    code.href = projects[2].code;
-    summary.innerHTML = projects[2].description;
-    skills.innerHTML = projects[2].technology;
+    projectContainer.style.transition = "opacity 0.5s linear";
+    projectContainer.style.opacity = "0";
+    setTimeout(function() {
+      image.src = projects[2].img;
+      projectContainer.style.transition = "opacity 1s linear";
+      projectContainer.style.opacity = "1";
+      title.innerHTML = projects[2].title;
+      demo.style.display = "inline-block";
+      demo.href = projects[2].demo;
+      code.href = projects[2].code;
+      summary.innerHTML = projects[2].description;
+      skills.innerHTML = projects[2].technology;
+    }, 600);
+
+
     clearBorders();
     mathymathy.style.border = "1px solid #aaa";
     mathymathy.style.boxShadow = "0 10px 6px -6px #777";
@@ -103,12 +131,20 @@ $(document).ready(function() {
   });
 
   izi.addEventListener("click", function() {
-    title.innerHTML = projects[3].title;
-    image.src = projects[3].img;
-    demo.style.display = "none";
-    code.href = projects[3].code;
-    summary.innerHTML = projects[3].description;
-    skills.innerHTML = projects[3].technology;
+    projectContainer.style.transition = "opacity 0.5s linear";
+    projectContainer.style.opacity = "0";
+
+    setTimeout(function() {
+      image.src = projects[3].img;
+      projectContainer.style.transition = "opacity 1s linear";
+      projectContainer.style.opacity = "1";
+      title.innerHTML = projects[3].title;
+      demo.style.display = "none";
+      code.href = projects[3].code;
+      summary.innerHTML = projects[3].description;
+      skills.innerHTML = projects[3].technology;
+    }, 600);
+
     clearBorders();
     izi.style.border = "1px solid #aaa";
     izi.style.boxShadow = "0 10px 6px -6px #777";
