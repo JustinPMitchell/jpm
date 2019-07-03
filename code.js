@@ -78,7 +78,7 @@ $(document).ready(function() {
     mathymathy.style.boxShadow = "none";
     izi.style.boxShadow = "none";
 
-
+    window.location.href = '#projects';
 
   });
 
@@ -104,6 +104,9 @@ $(document).ready(function() {
     dinoDynasty.style.boxShadow = "none";
     mathymathy.style.boxShadow = "none";
     izi.style.boxShadow = "none";
+
+    window.location.href = '#projects';
+
   });
 
   mathymathy.addEventListener("click", function() {
@@ -128,6 +131,9 @@ $(document).ready(function() {
     dinoDynasty.style.boxShadow = "none";
     chomper.style.boxShadow = "none";
     izi.style.boxShadow = "none";
+
+    window.location.href = '#projects';
+
   });
 
   izi.addEventListener("click", function() {
@@ -151,6 +157,10 @@ $(document).ready(function() {
     dinoDynasty.style.boxShadow = "none";
     chomper.style.boxShadow = "none";
     mathymathy.style.boxShadow = "none";
+
+    window.location.href = '#projects';
   });
+
+
 
 });

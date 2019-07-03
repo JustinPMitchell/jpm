@@ -1,3 +1,12 @@
+html {
+  width: 100% !important;
+}
+
+body {
+  position: absolute;
+  width: 100%;
+}
+
 body:after{
   display:none;
   content: url("./images/triangulated-profile-picture.png");
@@ -40,17 +49,18 @@ body:after{
 
 .profile-picture {
   height: 100%;
-  background: url("./images/profile-picture.jpg");
+  background-image: url("./images/profile-picture.jpg");
   background-position: center;
   background-size: cover;
-  transition: background 2s ease-in-out;
+  transition: background-image 2s ease-in-out;
 }
 
 .profile-picture:hover {
   height: 100%;
-  background: url("./images/triangulated-profile-picture.png");
+  background-image: url("./images/triangulated-profile-picture.png");
   background-position: center;
   background-size: cover;
+  transition: background-image 2s ease-in-out;
 }
 
 .profile-information {
@@ -155,3 +165,19 @@ body:after{
   margin: 0 -5.5%;
   padding: 20px 0;
 }
+
+@media only screen and (max-width: 768px) {
+  .profile-information {
+      padding: 0px;
+  }
+  .projects-title {
+    text-align: center;
+  }
+  .dino-dynasty, .chomper, #mathymathy, .izi {
+    margin-top: 10px;
+  }
+}
+
+
+
+
