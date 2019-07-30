@@ -22,7 +22,7 @@ $(document).ready(function() {
                 {
                   title: "Chomper",
                   img: "./images/chomper.png",
-                  demo: "https://chomper-macro.herokuapp.com/",
+                  demo: "https://chomper-macro-count.herokuapp.com/",
                   code: "https://github.com/JustinPMitchell/chomper",
                   description: "Make a meal plan for a week with a few clicks. Discover your recommended macronutrient levels, by entering in your personal information.",
                   technology: "<button class='skills'>Mongo</button><button class='skills'>Express</button><button class='skills'>React</button><button class='skills'>Node</button><button class='skills'>Edamam API</button>"                      
